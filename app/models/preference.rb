@@ -6,5 +6,6 @@ class Preference < ActiveRecord::Base
   has_many :users, through: :user_preference_selection
 
   scope :profile_preferences, -> { where(preference_type: 'Profile') }
+  scope :subscription, -> { where(preference_type: 'Subscription') }
   scope :adg_preferences, -> { where(preference_type: 'ADG') }
 end

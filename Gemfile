@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
 gem 'protected_attributes'
 
 gem 'rails', '~> 4.1.4'
-gem 'pg', '~> 0.17.1'
+gem 'pg', '~> 0.18'
 gem 'unicorn'
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +18,7 @@ gem 'compass-rails', '~> 1.1.7'
 gem 'haml', '~> 4.0.5'
 gem 'devise', '~> 3.2.4'
 gem 'cancan', '~> 1.6.10'
-gem 'activeadmin', git: 'https://github.com/gregbell/active_admin', ref: '4f445b51c22b12af2cdde57fe2ce9835c32ef88e'
+gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'state_machine'
 gem 'paperclip', '4.2.0'
 gem 'fog', '1.34.0'

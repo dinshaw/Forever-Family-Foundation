@@ -169,7 +169,10 @@ ActiveAdmin.register User do
       f.input :updated_at, start_year: 2004
       f.input :problems
       f.input :categories, as: :check_boxes
-      f.input :profile_preferences, as: :check_boxes
+      f.input :profile_preferences, label: 'Profile', as: :check_boxes,
+        collection: Preference.profile_preferences
+      f.input :profile_preferences, label: 'Subscription', as: :check_boxes,
+        collection: Preference.subscription
       f.inputs "Address", for: [:address, f.object.address || Address.new] do |address|
         address.input :address
         address.input :city
